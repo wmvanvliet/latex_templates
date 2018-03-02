@@ -16,7 +16,7 @@ Clone this repository and link the `templates/` folder into your local `texmf/` 
 git clone https://github.com/wmvanvliet/latex_templates.git 
 cd latex_templates
 mkdir -p `kpsewhich -var-value=TEXMFHOME`/tex/latex/local
-ln -s templates `kpsewhich -var-value=TEXMFHOME`/tex/latex/local/templates
+ln -s templates `kpsewhich -var-value=TEXMFHOME`/tex/latex/local/vanvliet_templates
 ```
 
 ## Usage
