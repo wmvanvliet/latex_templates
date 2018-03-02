@@ -8,6 +8,13 @@ Here are some LaTeX templates I use for:
 Their aim is to present scientific writing in a manner that provides comfortable reading of complicated subject matter.
 Ideas are incorporated from Elsevier's templates, Tufte books and Philip Chimento's [dissertation template](https://github.com/ptomato/dissertation).
 
+## Examples
+
+Journal paper | Research statement
+--------------|-------------------
+![Example of the paper document class](screenshots/paper1_thumb.png) | ![Example of the research statement document class](screenshots/research_statement1_thumb.png)
+![Features of paper document class](screenshots/paper1_thumb_annotated.png) | ![Features of the research statement document class](screenshots/research_statement1_thumb_annotated.png)
+
 ## Installation
 
 Clone this repository and link the `templates/` folder into your local `texmf/` folder:
