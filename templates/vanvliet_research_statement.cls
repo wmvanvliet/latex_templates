@@ -9,8 +9,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts
 
-% Emphesized text is bold
-\renewcommand{\emph}[1]{\textbf{#1}}
+% Emphesized text is orange
+%\renewcommand{\emph}[1]{\textbf{#1}}
+\definecolor{orange}{HTML}{7A0F02}
+\renewcommand{\emph}[1]{\textcolor{orange}{#1}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -30,10 +32,10 @@
 \renewcommand{\cite}[1]{~(\oldcite{#1})}
 
 % Enable underlining specific authors in citations and the bibliography
-\renewcommand*{\mkbibnamefamily}[1]{%
-  \ifitemannotation{highlight}
-    {\underline{#1}}
-    {#1}}
+%\renewcommand*{\mkbibnamefamily}[1]{%
+%  \ifitemannotation{highlight}
+%    {\underline{#1}}
+%    {#1}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
