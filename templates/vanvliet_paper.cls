@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{vanvliet_paper}[2018/03/02 LaTeX class for readable scientific text]
 \LoadClassWithOptions{article}
+\RequirePackage{vanvliet_common}
 
 % Styles common to multiple templates
 \RequirePackage{vanvliet_common}
@@ -30,7 +31,7 @@
 \RequirePackage[american]{babel}
 \RequirePackage{csquotes}
 \RequirePackage[style=apa, backend=biber, maxbibnames=99,
-            doi=true, isbn=true, url=true, natbib=true]{biblatex}
+                doi=true, isbn=true, url=true, natbib=true]{biblatex}
 \DeclareLanguageMapping{american}{american-apa}
 \let\oldcite\cite
 \renewcommand{\cite}[2][]{\sidenote{\footnotesize\raggedright#1 \oldcite{#2}}}
@@ -88,8 +89,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Referencing tables, figures, etc.
 
-\def\figureautorefname{figure}
-\def\tableautorefname{table}
+\def\figureautorefname{Figure}
+\def\tableautorefname{Table}
 \def\equationautorefname{equation}
 \def\subsectionautorefname{section}
 \def\subsubsectionautorefname{section}
