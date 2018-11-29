@@ -2,6 +2,9 @@
 \ProvidesClass{vanvliet_paper}[2018/03/02 LaTeX class for readable scientific text]
 \LoadClassWithOptions{article}
 
+% Styles common to multiple templates
+\RequirePackage{vanvliet_common}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Sizes and margins
@@ -44,6 +47,7 @@
 \def\maketitle{
 	\begin{minipage}{17cm}
 		\singlespacing
+		\raggedright
 		\today\\
 		\thejournal
 		\vspace*{1ex}

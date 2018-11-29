@@ -119,6 +119,7 @@
 
 % Main font
 \RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage{fourier}
 %\RequirePackage{tgtermes}
 
@@ -168,7 +169,12 @@
 \titlespacing*{\section}{0pt}{0.2cm}{0cm}
 \titleformat{\section}
 	{\bf \raggedright}
-	{\llap{\normalfont \large \csname thesection\endcsname\hspace{0.5em}}}
+	{\llap{\normalfont \small \csname thesection\endcsname\hspace{0.5em}}}
+	{0pt}
+	{}
+\titleformat{\subsection}
+	{\bf \raggedright}
+	{\llap{\normalfont \small \csname thesubsection\endcsname\hspace{0.5em}}}
 	{0pt}
 	{}
 
