@@ -30,7 +30,9 @@
 
 \RequirePackage[american]{babel}
 \RequirePackage{csquotes}
-\RequirePackage[style=apa, backend=biber, maxbibnames=99,
+%\RequirePackage[style=apa, backend=biber, maxbibnames=99,
+%                doi=true, isbn=true, url=true, natbib=true]{biblatex}
+\RequirePackage[style=apa, maxbibnames=99,
                 doi=true, isbn=true, url=true, natbib=true]{biblatex}
 \DeclareLanguageMapping{american}{american-apa}
 \let\oldcite\cite

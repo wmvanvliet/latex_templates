@@ -128,6 +128,22 @@
 
 \RequirePackage{microtype}
 
+% Code listings
+\usepackage{listings}
+\usepackage{inconsolata}
+\definecolor{codebackground}{rgb}{0.9,0.9,0.9}
+\definecolor{comment}{rgb}{0.25,0.25,0.25}
+\lstset{
+    basicstyle=\ttfamily\small,
+    keepspaces=true,
+    columns=fullflexible,
+    upquote=true,
+    language=Python,
+    belowskip=0pt,
+    commentstyle=\color{comment}
+}
+\newcommand{\code}[1]{\lstinline{#1}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Acronyms
@@ -167,14 +183,21 @@
 
 % Section numbers are printed somewhat smaller and in the margin
 \titlespacing*{\section}{0pt}{0.2cm}{0cm}
+\titlespacing*{\subsubsection}{0pt}{0pt}{-1ex}
+
 \titleformat{\section}
-	{\bf \raggedright}
+	{\bf\raggedright\large}
 	{\llap{\normalfont \small \csname thesection\endcsname\hspace{0.5em}}}
 	{0pt}
 	{}
 \titleformat{\subsection}
 	{\bf \raggedright}
 	{\llap{\normalfont \small \csname thesubsection\endcsname\hspace{0.5em}}}
+	{0pt}
+	{}
+\titleformat{\subsubsection}
+	{\bf \raggedright}
+	{}
 	{0pt}
 	{}
 
