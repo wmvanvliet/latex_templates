@@ -3,6 +3,9 @@
 \LoadClassWithOptions{article}
 \RequirePackage{vanvliet_common}
 
+% Styles common to multiple templates
+\RequirePackage{vanvliet_common}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Sizes and margins
@@ -27,7 +30,9 @@
 
 \RequirePackage[american]{babel}
 \RequirePackage{csquotes}
-\RequirePackage[style=apa, backend=biber, maxbibnames=99,
+%\RequirePackage[style=apa, backend=biber, maxbibnames=99,
+%                doi=true, isbn=true, url=true, natbib=true]{biblatex}
+\RequirePackage[style=apa, maxbibnames=99,
                 doi=true, isbn=true, url=true, natbib=true]{biblatex}
 \DeclareLanguageMapping{american}{american-apa}
 \let\oldcite\cite
@@ -49,6 +54,7 @@
 \def\maketitle{
 	\begin{minipage}{17cm}
 		\singlespacing
+		\raggedright
 		\today\\
 		\thejournal
 		\vspace*{1ex}
