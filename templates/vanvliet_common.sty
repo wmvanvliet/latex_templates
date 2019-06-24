@@ -1,4 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Assume everything is in utf-8 encoding
+\RequirePackage[utf8]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PDF setup
 %
 % Graphics and color
@@ -165,10 +169,16 @@
 \RequirePackage{titlesec}  
 
 % Section numbers are printed somewhat smaller and in the margin
-\titlespacing*{\section}{0pt}{0.2cm}{0cm}
+\titlespacing*{\section}{0pt}{0.2cm}{0pt}
+\titlespacing*{\subsection}{0pt}{1ex}{-1ex}
 \titleformat{\section}
-	{\bf \raggedright}
-	{\llap{\normalfont \large \csname thesection\endcsname\hspace{0.5em}}}
+	{\bf\raggedright\large}
+	{\llap{\normalsize\thesection\hspace{0.5em}}}
+	{0pt}
+	{}
+\titleformat{\subsection}
+	{\bf\raggedright}
+	{\llap{\small\thesubsection\hspace{0.5em}}}
 	{0pt}
 	{}
 

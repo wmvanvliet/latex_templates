@@ -36,9 +36,13 @@
 
 \RequirePackage{vanvliet_bib}
 
+% Make the text of the bibliography smaller than the main body text
+\AtBeginBibliography{\small}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title and authors formatting
+\RequirePackage{hyphenat} % To disable hyphenation in the title
 
 % Title
 \makeatletter
@@ -52,7 +56,9 @@
 		\hrule
 		\vspace*{2ex}
 		
-		\LARGE\textbf{\@title}
+		\begin{flushleft}
+		\LARGE\textbf{\nohyphens{\@title}}
+		\end{flushleft}
 
 		\vspace*{1ex}
 		\normalsize\@author

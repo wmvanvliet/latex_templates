@@ -27,9 +27,6 @@
   \iftoggle{bbx:doi}
     {\printfield{doi}}
     {}%
-  \iftoggle{bbx:eprint}
-    {\usebibmacro{eprint}}
-    {}%
   \iftoggle{bbx:url}
     {\iffieldundef{doi}%
       {\marginnote{\tiny\usebibmacro{url+urldate}}}%
