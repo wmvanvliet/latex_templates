@@ -8,7 +8,7 @@ Here are some LaTeX templates I use for:
 Their aim is to present scientific writing in a manner that provides comfortable reading of complicated subject matter.
 Ideas are incorporated from Elsevier's templates, Tufte books and Philip Chimento's [dissertation template](https://github.com/ptomato/dissertation).
 
-You can find all my papers, formatted with the `vanvliet_paper` template [here](https://domarijn.nl/marijn.xml).
+You can find all my papers, formatted with the `vanvliet_paper` template [here](https://users.aalto.fi/~vanvlm1).
 
 ## Examples
 
